@@ -1,11 +1,19 @@
-
-const   ProvincesPage  = ()  =>  {
+const ProvincesPage = () => {
   return (
-    <div className="bg-red-700 h-screen">
-      <h1 className="bg-white text-black text-center font-bold">This is Provinces page</h1>
+    <div className="min-h-screen bg-[#102238] text-white flex flex-col justify-center items-center px-6 py-12">
+      <div className="max-w-2xl w-full text-center space-y-4">
+        <span className="text-[#cf9062] text-xs font-bold tracking-[0.18em] uppercase">
+          Provinces
+        </span>
+        <h1 className="text-3xl sm:text-5xl font-serif tracking-tight">
+          Provinces & Regional Networks
+        </h1>
+        <p className="text-white/60 text-sm sm:text-base">
+          Regional details, district chapters, and provincial updates will be available here.
+        </p>
+      </div>
     </div>
   );
-}
+};
 
-  export default ProvincesPage;
-
+export default ProvincesPage;

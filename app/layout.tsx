@@ -29,9 +29,9 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col bg-[#102238] text-white">
         <Header />
-        {children}
+        <main className="flex-grow">{children}</main>
         <Footer />
         
         {/* Botpress Widget Scripts */}
