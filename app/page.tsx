@@ -225,7 +225,7 @@ export default function Home() {
             <Link href="/provinces/khyber-pakhtunkhwa" className="relative min-h-[270px] p-[32px] max-[580px]:p-[24px] border-r border-b border-[#102035]/15 bg-transparent hover:text-white hover:bg-[#a7352d] transition-all duration-250 max-md:border-l-[0px] max-md:[&:nth-child(2n+1)]:border-l max-[580px]:border-l-[1px_!important]">
               <span className="urdu-text text-[22px]">خیبر پختونخوا</span>
               <small className="block mt-[40px] text-[#777f85] text-[9px] uppercase tracking-[0.14em] transition-colors duration-250">Northern Chapters</small>
-              <h3 className="font-serif font-normal text-[30px] max-[580px]:text-[24px] m-0 mt-[11px] mr-[20px]">K.P.K</h3>
+              <h3 className="font-serif font-normal text-[30px] max-[580px]:text-[24px] m-0 mt-[11px] mr-[20px]">KP.K</h3>
               <span className="absolute right-[28px] bottom-[30px] rotate-45 transition-transform">↑</span>
             </Link>
           </div>
