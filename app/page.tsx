@@ -85,7 +85,7 @@ export default function Home() {
             
             <article className="p-6 sm:p-[34px_28px_40px] border-b md:border-b-0 md:border-r border-[#102035]/15">
               <span className="text-[#a7352d] text-[9px]">02</span>
-              <h3 className="font-serif font-normal text-xl sm:text-[28px] mt-6 sm:mt-[55px] mb-2 sm:mb-3">Heritage Preservation</h3>
+              <h3 className="font-serif font-normal text-xl sm:text-[28px] mt-6 sm:mt-[55px] mb-2 sm:mb-3">Hrtage Preser</h3>
               <p className="text-[#707980] text-xs sm:text-[12px] leading-relaxed">Documenting historical timelines, cultural roots, and keeping records intact safely for generations.</p>
             </article>
             
@@ -173,14 +173,14 @@ export default function Home() {
             <Link href="/provinces/balochistan" className="relative min-h-[220px] sm:min-h-[270px] p-5 sm:p-[32px] border-r border-b border-[#102035]/15 bg-transparent hover:text-white hover:bg-[#a7352d] transition-all duration-250">
               <span className="urdu-text text-[20px] sm:text-[22px]">بلوچستان</span>
               <small className="block mt-4 sm:mt-[40px] text-[#777f85] text-[9px] uppercase tracking-[0.14em]">Provincial Network</small>
-              <h3 className="font-serif font-normal text-xl sm:text-[30px] m-0 mt-2 sm:mt-[11px]">Balochistan</h3>
-              <span className="absolute right-5 sm:right-[28px] bottom-5 sm:bottom-[30px] rotate-45">↑</span>
+              <h3 className="font-serif font-normal text-xl sm:text-[30px] m-0 mt-2 sm:mt-[11px]">Ba</h3>
+              <span className="absolute right-5 sm:right-[28px] bottom-5 sm:bottom-[30px] rotate-45">↑Blch</span>
             </Link>
 
             <Link href="/provinces/khyber-pakhtunkhwa" className="relative min-h-[220px] sm:min-h-[270px] p-5 sm:p-[32px] border-r border-b border-[#102035]/15 bg-transparent hover:text-white hover:bg-[#a7352d] transition-all duration-250">
               <span className="urdu-text text-[20px] sm:text-[22px]">خیبر پختونخوا</span>
               <small className="block mt-4 sm:mt-[40px] text-[#777f85] text-[9px] uppercase tracking-[0.14em]">Northern Chapters</small>
-              <h3 className="font-serif font-normal text-xl sm:text-[30px] m-0 mt-2 sm:mt-[11px]">Khyber Pakhtunkhwa</h3>
+              <h3 className="font-serif font-normal text-xl sm:text-[30px] m-0 mt-2 sm:mt-[11px]">Kpk</h3>
               <span className="absolute right-5 sm:right-[28px] bottom-5 sm:bottom-[30px] rotate-45">↑</span>
             </Link>
           </div>
