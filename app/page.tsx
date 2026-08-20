@@ -43,7 +43,7 @@ export default function Home() {
 
           {/* --- DESCRIPTION (URDU) --- */}
           <p className="urdu-text max-w-[700px] mt-[20px] mb-0 text-white/80" dir="rtl">
-  جب ایک ہی خون کے دھارے آپس میں ملتے ہیں، تو وہ سمندر کی سی طاقت اختیار کر لیتے ہیں۔ ہمارا اتحاد محض ایک نام نہیں، بلکہ ہماری بقا، ہمارے وقار اور ہماری آنے والی نسلوں کے درخشاں مستقبل کی ضمانت ہے۔ آئیے مل کر اپنے اس سانجھے ورثے کو ایک لازوال قوت بنائیں۔
+        جب ایک ہی خون کے دھارے آپس میں ملتے ہیں، تو وہ سمندر کی سی طاقت اختیار کر لیتے ہیں۔ ہمارا اتحاد محض ایک نام نہیں، بلکہ ہماری بقا، ہمارے وقار اور ہماری آنے والی نسلوں کے درخشاں مستقبل کی ضمانت ہے۔ آئیے مل کر اپنے اس سانجھے ورثے کو ایک لازوال قوت بنائیں۔
 </p>
 
           {/* .actions */}
@@ -221,11 +221,11 @@ export default function Home() {
               <span className="absolute right-[28px] bottom-[30px] rotate-45 transition-transform">↑</span>
             </Link>
 
-            {/* Khyber Pakhtunkhwa */}
-            <Link href="/provinces/khyber-pakhtunkhwa" className="relative min-h-[270px] p-[32px] border-r border-b border-[#102035]/15 bg-transparent hover:text-white hover:bg-[#a7352d] transition-all duration-250 max-md:border-l-[0px] max-md:[&:nth-child(2n+1)]:border-l max-[580px]:border-l-[1px_!important]">
+            {/* Khyber Pakhtunkhwa - Updated font size and padding for mobile */}
+            <Link href="/provinces/khyber-pakhtunkhwa" className="relative min-h-[270px] p-[32px] max-[580px]:p-[24px] border-r border-b border-[#102035]/15 bg-transparent hover:text-white hover:bg-[#a7352d] transition-all duration-250 max-md:border-l-[0px] max-md:[&:nth-child(2n+1)]:border-l max-[580px]:border-l-[1px_!important]">
               <span className="urdu-text text-[22px]">خیبر پختونخوا</span>
               <small className="block mt-[40px] text-[#777f85] text-[9px] uppercase tracking-[0.14em] transition-colors duration-250">Northern Chapters</small>
-              <h3 className="font-serif font-normal text-[30px] m-0 mt-[11px] mr-[40px]">Khyber Pakhtunkhwa</h3>
+              <h3 className="font-serif font-normal text-[30px] max-[580px]:text-[24px] m-0 mt-[11px] mr-[20px]">KPK</h3>
               <span className="absolute right-[28px] bottom-[30px] rotate-45 transition-transform">↑</span>
             </Link>
           </div>
@@ -263,7 +263,7 @@ export default function Home() {
       <h1>section end </h1>
 
 
-      {/* --- SECTION 05: JOIN THE BAND --- *
+      {/* --- SECTION 05: JOIN THE BAND --- */}
       
       {/* .join-band */}
       <section className="p-[110px_24px] text-center text-white bg-[#a7352d]">
