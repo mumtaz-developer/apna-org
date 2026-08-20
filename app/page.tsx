@@ -1,18 +1,20 @@
 import Link from 'next/link';
+import Image from 'next/image'; // Optional, agar Next.js ka Image tag use karna ho toh, warna standard <img> bhi theek hai
 
 export default function Home() {
   return (
     <>
       {/* --- HERO SECTION --- */}
-      
-
-      {/* .home-hero */}
-
       <section className="min-h-[800px] h-[100svh] max-md:min-h-[740px] relative text-white overflow-hidden bg-[#102238]">
-        {/* .hero-image */}
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/heroimg2.jpeg')" }} />
+        {/* .hero-image - Using img tag with object-contain for small screens */}
+        <div className="absolute inset-0 flex items-center justify-center overflow-hidden">
+          <img 
+            src="/heroimg2.jpeg" 
+            alt="Hero Background" 
+            className="w-full h-full object-cover max-md:object-contain max-md:w-auto max-md:h-full" 
+          />
+        </div>
 
-       
         {/* .hero-shade */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#071524]/98 via-[#071524]/75 to-[#071524]/10 bg-gradient-to-t from-[#071524]/65 via-transparent to-transparent z-[1]" />
         
@@ -43,7 +45,7 @@ export default function Home() {
 
           {/* --- DESCRIPTION (URDU) --- */}
           <p className="urdu-text max-w-[700px] mt-[20px] mb-0 text-white/80" dir="rtl">
-  جب ایک ہی خون کے دھارے آپس میں ملتے ہیں، تو وہ سمندر کی سی طاقت اختیار کر لیتے ہیں۔ ہمارا اتحاد محض ایک نام نہیں، بلکہ ہماری بقا، ہمارے وقار اور ہماری آنے والی نسلوں کے درخشاں مستقبل کی ضمانت ہے۔ آئیے مل کر اپنے اس سانجھے ورثے کو ایک لازوال قوت بنائیں۔
+جب ایک ہی خون کے دھارے آپس میں ملتے ہیں، تو وہ سمندر کی سی طاقت اختیار کر لیتے ہیں۔ ہمارا اتحاد محض ایک نام نہیں، بلکہ ہماری بقا، ہمارے وقار اور ہماری آنے والی نسلوں کے درخشاں مستقبل کی ضمانت ہے۔ آئیے مل کر اپنے اس سانجھے ورثے کو ایک لازوال قوت بنائیں۔
 </p>
 
           {/* .actions */}
@@ -68,11 +70,7 @@ export default function Home() {
       </section>
       <h1>section nd</h1>
 
-
       {/* --- SECTION 01: PURPOSE --- */}
-      
-      
-      {/* .section.paper */}
       <section className="bg-[#fbfaf6] text-[#102035] py-[100px] max-[580px]:py-[75px] px-[clamp(24px,7vw,110px)]">
         <div className="max-w-[1250px] mx-auto">
           
@@ -118,11 +116,7 @@ export default function Home() {
       </section>
       <h1>section end</h1>
 
-
       {/* --- SECTION 02: LEADERSHIP --- */}
-      
-      
-      {/* .section.navy */}
       <section className="bg-[#102238] text-white py-[100px] max-[580px]:py-[75px] px-[clamp(24px,7vw,110px)]">
         <div className="max-w-[1250px] mx-auto">
           
@@ -170,14 +164,9 @@ export default function Home() {
           </Link>
         </div>
       </section>
-
       <h1>section end</h1>
 
-
       {/* --- SECTION 03: PROVINCES --- */}
-      
-      
-      {/* .section.cream */}
       <section className="bg-[#f1ebdf] text-[#102035] py-[100px] max-[580px]:py-[75px] px-[clamp(24px,7vw,110px)]">
         <div className="max-w-[1250px] mx-auto">
           
@@ -233,14 +222,16 @@ export default function Home() {
       </section>
       <h1>section end </h1>
 
-
       {/* --- SECTION 04: HISTORY PREVIEW --- */}
-    
-      
-      {/* .history-preview */}
       <section className="min-h-[650px] relative text-white flex justify-end items-center overflow-hidden bg-[#102238] after:content-[''] after:absolute after:inset-0 after:bg-gradient-to-r after:from-[#0a192a]/35 after:to-[#0a192a]/95 max-[580px]:after:bg-[#071124]/85 after:z-[1]">
-        {/* .history-image */}
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/noonari-heritage-hero.png')" }} />
+        {/* .history-image - Using img tag */}
+        <div className="absolute inset-0 flex items-center justify-center overflow-hidden">
+          <img 
+            src="/noonari-heritage-hero.png" 
+            alt="History Background" 
+            className="w-full h-full object-cover max-md:object-contain max-md:w-auto max-md:h-full" 
+          />
+        </div>
         
         {/* .history-copy */}
         <div className="relative z-[2] w-[51%] max-md:w-[75%] max-[580px]:w-full p-[80px_clamp(24px,7vw,110px)_80px_70px] max-[580px]:p-[70px_24px]">
@@ -262,10 +253,7 @@ export default function Home() {
       </section>
       <h1>section end </h1>
 
-
-      {/* --- SECTION 05: JOIN THE BAND --- *
-      
-      {/* .join-band */}
+      {/* --- SECTION 05: JOIN THE BAND --- */}
       <section className="p-[110px_24px] text-center text-white bg-[#a7352d]">
         <div className="max-w-3xl mx-auto">
           <p className="m-0 mb-[25px] flex items-center justify-center gap-[11px] text-[#f0c9a9] text-[10px] font-bold tracking-[0.18em] uppercase">
