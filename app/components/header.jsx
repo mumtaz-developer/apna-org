@@ -1,16 +1,15 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image"; // Image component import kiya
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { Arrow } from "./icons"; // Mark ko yahan se hata diya kyunki ab image use ho rahi hai
+import { Arrow } from "./icons";
 
 export function Header() {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
 
-  // Pure JavaScript syntax (No TypeScript errors)
   const isActive = (href) => pathname === href || pathname.startsWith(`${href}/`);
 
   const linkStyles = "relative after:absolute after:left-0 after:bottom-[-8px] after:h-[1px] after:bg-[#cf9062] after:transition-all after:duration-200";
@@ -18,9 +17,8 @@ export function Header() {
   return (
     <header className="absolute inset-x-0 top-0 auto z-20 flex h-[82px] items-center justify-between border-b border-white/18 px-[clamp(22px,5vw,76px)] text-white max-md:h-[72px]">
       
-      {/* Brand / Logo */}
+      {/* Brand / Desktop Logo */}
       <Link className="flex items-center gap-3" href="/" onClick={() => setOpen(false)}>
-        {/* Naya Rounded Logo Custom CSS Styling Ke Sath */}
         <div className="relative w-[54px] h-[54px] flex-shrink-0 rounded-full overflow-hidden shadow-[0_0_0_1px_rgba(255,255,255,0.24),0_5px_18px_rgba(0,0,0,0.2)] max-[580px]:w-[46px] max-[580px]:h-[46px]">
           <Image 
             src="/logo1.png" 
@@ -48,6 +46,23 @@ export function Header() {
         aria-label="Main navigation"
       >
         
+        {/* --- Mobile Menu Logo (Clickable Home Link) --- */}
+        <Link 
+          href="/" 
+          onClick={() => setOpen(false)} 
+          className="hidden max-md:flex flex-col items-center mb-10 cursor-pointer"
+        >
+          <div className="flex-shrink-0 rounded-full overflow-hidden shadow-lg shadow-black/20 border border-white/20">
+            <Image 
+              src="/logo1.png" 
+              alt="APNA Logo Mobile" 
+              width={80} 
+              height={80}
+              className="object-cover"
+            />
+          </div>
+        </Link>
+
         <Link 
           href="/about" 
           onClick={() => setOpen(false)}
@@ -90,7 +105,7 @@ export function Header() {
         
         {/* Call to Action Button */}
         <Link
-          className="flex items-center gap-[9px] border border-white/65 px-4 py-3"
+          className="flex items-center gap-[9px] border border-white/65 px-4 py-3 mt-6"
           href="/membership"
           onClick={() => setOpen(false)}
         >
